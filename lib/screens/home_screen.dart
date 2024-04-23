@@ -13,6 +13,7 @@ class _HomeScreenState extends State<HomeScreen> {
   List<WebtoonModel> webtoons = [];
   bool isLoading = true;
 
+
   void waitForWebtoons() async {
     webtoons = await ApiService.getTodaysToons();
     setState(() {
