@@ -17,7 +17,6 @@ class ApiService {
       for (var webtoon in webtoons) {
         webtoonInstance.add(WebtoonModel.fromJson(webtoon));
       }
-      print(webtoonInstance);
       return webtoonInstance;
     } else {
       print("Failed to load data");
